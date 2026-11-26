@@ -1,0 +1,26 @@
+
+### Registrar un usuario
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+  "email": "usuario@gmail.com",
+  "password": "123456",
+  "name": "David"
+}
+
+###
+
+### Iniciar sesión
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "usuario@gmail.com",
+  "password": "123456"
+}
+
+
+### Obtener todos los usuarios (con token)
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzdWFyaW9AZ21haWwuY29tIiwiaWQiOiIxIiwiaWF0IjoxNzk1NTc3MzA0LCJleHAiOjE3OTU1NzczNjR9.h4NW2Vbxu-2gablnMz-OwGyHriPuseQIgfkCplmYbGw
